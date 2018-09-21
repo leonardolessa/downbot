@@ -8,7 +8,7 @@ const T = new Twit(config);
 
 server.on('message', (log) => {
   const tweet = {
-    status: `Downbot: Oi Vivo, mais uma queda de conexão às ${moment(log.date).format('LTS')}, obrigado pelo péssimo serviço prestado. #vivo #twitterbot`,
+    status: `Downbot: Oi Vivo, mais uma queda de conexão às ${moment(log.date).format('LTS')}, obrigado pelo péssimo serviço prestado. #reclameaqui #vivointernet #vivo #twitterbot`,
   };
   const isConnected = log.message.indexOf('PPPoE: Connected') > -1;
   if (isConnected) {
